@@ -61,6 +61,8 @@
         { cells: ["Brand refresh agency", "Mar", "Mar", '<span class="num">−$6,000</span>', "Scope cut, real saving", "Director"] }
       ]),
     dashboard:
+      '<div class="pbi"><nav class="pages"><b>Pages</b><span class="on">Overview</span><span>By team</span><span>Initiatives</span><span>Forecast moves</span><span>Transactions</span></nav><div class="pbi-main">' +
+      '<div class="slicers"><span class="sl">Period <b>Q1 ▸ Feb ▸ Wk 6</b></span><span class="sl">Team <b>All</b></span><span class="sl">Funding <b>All</b></span><span class="sl">Initiative <b>All</b></span><span class="sync">Filters synced across pages</span></div>' +
       '<div class="kpis">' +
         '<div><span>Budget</span><b class="num">$1.20M</b></div>' +
         '<div><span>Actual</span><b class="num">$318K</b></div>' +
@@ -76,7 +78,7 @@
         }).join("") +
       "</div>" +
       '<div class="legend"><span><i class="a"></i>Actual</span><span><i class="c"></i>Committed</span><span><i class="t"></i>Time elapsed</span></div>' +
-      '<div class="tieout">' + pill("Ties out", "ok") + " Dashboard total vs Finance GL actuals, checked every month-end</div>",
+      '<div class="tieout">' + pill("Ties out", "ok") + " Dashboard total vs Finance GL actuals, checked every month-end · " + pill("Refreshed 7:00 AM", "") + "</div></div></div>",
     run:
       '<div class="cycle" id="cycle"></div>' +
       '<div class="cap" style="margin-top:14px">Owner report · one page, every two weeks</div>' +
@@ -138,9 +140,9 @@
       key: "dashboard", n: "04", name: "Dashboard", when: "In stages",
       role: "I report only from the log, so the dashboard and Finance's numbers tie out.",
       gather: ["The capture log and forecast", "Budget by team and initiative", "GL actuals from Finance for the tie-out"],
-      process: ["Stage one, leadership view: budget, actual, committed, forecast, variance and remaining for each team", "Stage two, team view: each initiative's status and spend against time elapsed", "Reconcile dashboard totals to Finance's actuals every month-end and explain any gap"],
+      process: ["Model the data as a star schema: one fact table of transactions, lookup tables for team, funding stream, initiative and GL, so a new code shows up without a redesign", "Stage one, leadership view: budget, actual, committed, forecast, variance and remaining for each team", "Stage two, team pages: each initiative's status and spend against time elapsed, with week, month and quarter drill-down and filters that stay in sync across pages", "Save a forecast snapshot each month so the report can show what moved", "Refresh on a schedule from the shared log, and reconcile totals to Finance's actuals every month-end"],
       action: "Publish it where owners already work, and retire the side spreadsheets.",
-      output: "A live spend dashboard in Power BI that matches Finance's numbers.",
+      output: "A multi-page Power BI budget dashboard that refreshes itself and matches Finance's numbers.",
       proof: [["HAZY Coffee", "Power BI dashboard joining Square sales with Google Ads spend."], ["CIBC Mellon", "Daily cash and position reconciliations: making two sources agree is my day job."]],
       links: [["Store Report", "#work"]]
     },

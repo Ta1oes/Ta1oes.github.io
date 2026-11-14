@@ -305,3 +305,14 @@ footer .fine{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 .proof-grid div{padding:14px 16px;border-radius:14px;border:1px dashed var(--line)}
 .proof-grid b{font:600 15px/1.2 var(--display);color:var(--accent)}
 .proof-grid p{color:var(--muted);font-size:14px;margin-top:4px}
+.pbi{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px}
+.pbi .pages{display:grid;align-content:start;gap:4px;padding:10px;border-radius:12px;background:var(--surface);border:1px solid var(--line);font-size:13px}
+.pbi .pages b{font:500 10.5px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:4px 8px 8px}
+.pbi .pages span{padding:7px 8px;border-radius:8px;color:var(--muted)}
+.pbi .pages span.on{background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--ink);font-weight:600}
+.pbi-main{min-width:0}
+.slicers{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:12px}
+.slicers .sl{font-size:12px;color:var(--muted);padding:5px 9px;border-radius:8px;border:1px solid var(--line);background:var(--surface)}
+.slicers .sl b{color:var(--ink);font-weight:600;margin-left:4px}
+.slicers .sync{font:500 11px/1 var(--mono);color:var(--good);margin-left:auto}
+@media (max-width:760px){.pbi{grid-template-columns:1fr}.pbi .pages{display:flex;flex-wrap:wrap}.pbi .pages b{display:none}.slicers .sync{margin-left:0}}
