@@ -316,3 +316,11 @@ footer .fine{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 .slicers .sl b{color:var(--ink);font-weight:600;margin-left:4px}
 .slicers .sync{font:500 11px/1 var(--mono);color:var(--good);margin-left:auto}
 @media (max-width:760px){.pbi{grid-template-columns:1fr}.pbi .pages{display:flex;flex-wrap:wrap}.pbi .pages b{display:none}.slicers .sync{margin-left:0}}
+.facts.roles a{display:block;background:var(--bg);padding:14px 16px;text-decoration:none;transition:background .2s}
+.facts.roles a:hover{background:color-mix(in srgb,var(--accent) 6%,var(--bg))}
+.facts.roles .r{font:500 11px/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:0}
+.facts.roles b{font-size:19px;margin-top:6px}
+.facts.roles span:last-child{margin-top:6px}
+.timeline ul{margin:8px 0 0;padding-left:18px;display:grid;gap:5px;color:var(--muted);font-size:15px}
+.timeline .org a,.edu a{text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 45%,transparent)}
+.timeline .demo{display:inline-block;margin-top:10px;font-size:13.5px;font-weight:600;color:var(--accent);text-decoration:none}

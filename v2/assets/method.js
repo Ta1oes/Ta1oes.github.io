@@ -133,7 +133,7 @@
       process: ["Build the capture log: one row per transaction, every code a dropdown, built-in validation, approver and date required", "Build the monthly forecast template with a change log: what moved, from when to when, why, who approved", "Build the biweekly report template that reads straight from the log", "Dry-run a full cycle on last month's real data and fix what breaks"],
       action: "Go live at the start of the budget year with a log that is clean from day one.",
       output: "Capture log, forecast template and change log, report template, dry-run results.",
-      proof: [["CIBC Mellon", "VBA tools that capture each payment once, map it to the account code and flag exceptions. Used across 30+ funds, 1–2 h cut to 10–20 min."], ["Store Report", "Sales captured once into SQLite, then every report reads from that one source."]],
+      proof: [["CIBC Mellon", "VBA tools that capture each payment once, map it to the account code and flag exceptions. Used across 30+ funds, with over 60% less manual processing time."], ["% ARABICA", "400K+ transactions consolidated into one source; every dashboard reads from it."]],
       links: [["Store Report", "#work"]]
     },
     {
@@ -143,7 +143,7 @@
       process: ["Model the data as a star schema: one fact table of transactions, lookup tables for team, funding stream, initiative and GL, so a new code shows up without a redesign", "Stage one, leadership view: budget, actual, committed, forecast, variance and remaining for each team", "Stage two, team pages: each initiative's status and spend against time elapsed, with week, month and quarter drill-down and filters that stay in sync across pages", "Save a forecast snapshot each month so the report can show what moved", "Refresh on a schedule from the shared log, and reconcile totals to Finance's actuals every month-end"],
       action: "Publish it where owners already work, and retire the side spreadsheets.",
       output: "A multi-page Power BI budget dashboard that refreshes itself and matches Finance's numbers.",
-      proof: [["HAZY Coffee", "Power BI dashboard joining Square sales with Google Ads spend."], ["CIBC Mellon", "Daily cash and position reconciliations: making two sources agree is my day job."]],
+      proof: [["% ARABICA", "All-in-one reporting dashboard across 10 locations, refreshed hourly."], ["LensCasters", "Client dashboards for monthly energy spend and budget scenarios."], ["CIBC Mellon", "Daily cash and position reconciliations: making two sources agree is my day job."]],
       links: [["Store Report", "#work"]]
     },
     {
@@ -153,7 +153,7 @@
       process: ["Check the log for missing codes or approvals and chase them", "Every two weeks: a one-page report for each owner and a short summary for leadership", "Every month: update the forecast, log every change with its reason, submit to Finance", "Keep an issue log; change the template when the same error happens twice"],
       action: "Separate timing shifts from real savings or overspend, so leadership acts on the right thing.",
       output: "Biweekly owner reports, monthly forecasts with a change log, and a closed-out issue log.",
-      proof: [["CIBC Mellon", "Month-end fee accrual true-ups and journal entries on a fixed close calendar."], ["% Arabica", "Sales variance checks behind the bar, by hour, against last week."]],
+      proof: [["CIBC Mellon", "Month-end fee accrual true-ups and journal entries on a fixed close calendar."], ["% ARABICA", "As reporting consultant: hourly dashboards for 10 locations, tracked against historical benchmarks."]],
       links: []
     },
     {

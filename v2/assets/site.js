@@ -27,12 +27,12 @@
     },
     {
       id: "report", cat: "coffee", glow: "rgb(255 154 89/.18)",
-      eyebrow: "Analytics · 2026", title: "Store Report",
-      blurb: "Sales analytics for the stores on top of Kitchen Bridge data: cups by hour, last-week comparison, demand forecast and prep suggestions.",
+      eyebrow: "% ARABICA · consulting · 2026", title: "Store Report",
+      blurb: "One reporting dashboard for % ARABICA: sales and operations data from 10 locations, about 68,000 transactions a month, refreshed hourly, with forecasts that guide inventory and purchasing.",
       stack: ["SQLite", "Python", "Forecasting", "Square API"],
       details: [
-        "Hourly sync from Square into SQLite; the dashboard shows today against the same day last week.",
-        "Demand forecast feeds a prep list so the bar knows how much cold brew and syrup to make before the rush.",
+        "Pipelines consolidate 400K+ transactions and six months of history into one source, updated hourly.", "Daily sales, peak hours, product performance and seasonal promotions against historical benchmarks.",
+        "Forecasts of daily inventory and seasonal demand guide purchasing budgets and prep before the rush.",
         "The card on this page runs on sample numbers, not store data."
       ],
       screens: [
@@ -58,8 +58,8 @@
     },
     {
       id: "living-building", cat: "home", glow: "rgb(127 226 202/.16)", link: "smart-home.html", linkLabel: "Open the Living Building",
-      eyebrow: "Home systems", title: "Living Building",
-      blurb: "A two-storey Home Assistant digital twin. Heating follows the room you are in instead of a hallway thermostat.",
+      eyebrow: "LensCasters Consulting · client demo", title: "Living Building",
+      blurb: "The demo I show LensCasters clients: a two-storey Home Assistant digital twin where heating follows the room you are in, used to plan budgets and energy savings.",
       stack: ["Home Assistant", "NAS", "Matter", "Kasa", "Heat pump zoning"],
       details: [
         "Six room sensors, two control displays and one local home system.",
