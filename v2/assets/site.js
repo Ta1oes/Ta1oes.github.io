@@ -77,8 +77,8 @@
     },
     {
       id: "prefab", wide: true, cat: "research", glow: "rgb(217 255 136/.12)", link: "#reports", linkLabel: "Read the PreFab reports",
-      eyebrow: "Market research · 2026", title: "Ontario prefab ADU study",
-      blurb: "Is a factory-built backyard suite a business in Ontario? 5.5 GB of public data from StatCan, CMHC and Toronto Open Data, a 3.6 GB SQLite base, and seven reports.",
+      eyebrow: "LensCasters Consulting · market research", title: "Ontario prefab ADU study",
+      blurb: "Research for LensCasters: is a factory-built backyard suite a business in Ontario? 5.5 GB of public data from StatCan, CMHC and Toronto Open Data, a 3.6 GB SQLite base, and seven reports.",
       stack: ["Python", "SQLite", "StatCan", "CMHC", "O. Reg 299/19", "Financial model"],
       details: [
         "Reproducible scripts pull and clean the raw government data into one database.",
